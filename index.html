@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Respira.ai</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Respira.ai</h1>
+    
+    <div class="circle" id="circle"></div>
+    <div class="instructions" id="instructions">Clique em Iniciar para começar</div>
+    
+    <div class="controls">
+        <div class="main-buttons">
+          <button onclick="toggleBreathing()" id="startBtn">Iniciar</button>
+          <button onclick="toggleMute()" id="muteBtn">🔊 Som</button>
+        </div>
+        
+        <div class="ambient-select">
+          <select id="soundSelect">
+            <option value="">Som ambiente (opcional)</option>
+            <option value="https://docs.google.com/uc?export=download&id=1o29GP6IQ5w-glyhCHGdvl7g8__Prrxl-">🌧️ Chuva</option>
+            <option value="https://docs.google.com/uc?export=download&id=10nvS-qCmkRx8rOPfXtgBlx4Zo-hPQLX8">🌳 Floresta</option>
+            <option value="https://docs.google.com/uc?export=download&id=1Sa0lGcXAjnKlEX0ItHxyzBDPCY5L83vt">🌊 Mar</option>
+          </select>
+        </div>
+      </div>
+      
+
+    <div class="timer" id="timer">00:00</div>
+    
+    <div class="extra-buttons">
+        <button onclick="toggleTheme()" class="theme-toggle">🌙 Tema</button>
+        <button onclick="compartilharWhatsApp()" class="whatsapp-share">📲 Compartilhar</button>
+
+    </div>
+
+    
+      
+      
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
