@@ -109,7 +109,7 @@ function toggleTheme() {
   }
   
   function compartilharWhatsApp() {
-    const mensagem = encodeURIComponent("Acabei de meditar com o Respira.ai 🌱 Respire você também: https://respira.ai");
+    const mensagem = encodeURIComponent("Acabei de meditar com o Respira.ai 🌱 Respire você também: https://respiraai.netlify.app/");
     const url = `https://wa.me/?text=${mensagem}`;
     window.open(url, "_blank");
   }
