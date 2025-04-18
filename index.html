@@ -4,6 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Respira.ai</title>
+    <!-- Favicons para navegadores -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/icons/favicon.ico">
+  
+    <!-- Ícone para iOS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  
+    <!-- Manifesto PWA -->
+    <link rel="manifest" href="manifest.json">
+  
+    <!-- Tema da barra do navegador (Android) -->
+    <meta name="theme-color" content="#4CAF50">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -35,14 +49,26 @@
     <div class="extra-buttons">
         <button onclick="toggleTheme()" class="theme-toggle">🌙 Tema</button>
         <button onclick="compartilharWhatsApp()" class="whatsapp-share">📲 Compartilhar</button>
-
     </div>
 
     
-      
-      
   </div>
 
   <script src="script.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then((registration) => {
+            console.log('Service Worker registrado com sucesso:', registration);
+          })
+          .catch((error) => {
+            console.log('Falha ao registrar o Service Worker:', error);
+          });
+      });
+    }
+  </script>
+  
 </body>
 </html>
