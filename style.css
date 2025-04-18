@@ -166,6 +166,13 @@
   .feedback-btn:hover {
     background-color: #388E3C;
   }
+
+  .footer{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999;
+  }
   
   .footer-link {
     display: inline-block;
